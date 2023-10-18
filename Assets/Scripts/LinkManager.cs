@@ -9,7 +9,7 @@ public class LinkManager : MonoBehaviour
     public GameObject road2;
     public List<Edge> linksList;
     public List<Vector3> roadPositionsList;
-    public List<Tuple<Node, Node, int>> nearestNodesList { get; set; }
+    public List<Tuple<Node, Node, int>> nearestNodesList;
 
     private void Awake()
     {
