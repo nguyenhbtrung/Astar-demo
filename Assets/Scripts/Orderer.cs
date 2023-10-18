@@ -11,11 +11,11 @@ public class Orderer : Node
     public Food foodType;
     public Node nearestNode;
 
-    private void Start()
-    {
-        counter = 30;
-        shipper = null;
-    }
+    //private void Start()
+    //{
+    //    counter = 30;
+    //    shipper = null;
+    //}
     private void Update()
     {
         counter -= Time.deltaTime;
