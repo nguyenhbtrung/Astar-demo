@@ -6,6 +6,8 @@ public class ShipperManager : MonoBehaviour
     public Transform selectedOrderer;
     public Material selectedMaterial;
     public Material unselectedMaterial;
+    public Sprite selectedSprite;
+    public Sprite unselectedSprite;
 
     public Node pizzaStore;
     public Node banhMiStore;
@@ -20,7 +22,8 @@ public class ShipperManager : MonoBehaviour
             {
                 if (selectedShipper != null)
                 {
-                    selectedShipper.GetComponent<Renderer>().material = unselectedMaterial;
+                    //selectedShipper.GetComponent<Renderer>().material = unselectedMaterial;
+                    selectedShipper.GetComponentInChildren<SpriteRenderer>().sprite = unselectedSprite;
                     selectedShipper = null;
                 }
             }
@@ -30,16 +33,19 @@ public class ShipperManager : MonoBehaviour
                     return;
                 if (selectedShipper != null)
                 {
-                    selectedShipper.GetComponent<Renderer>().material = unselectedMaterial;
+                    //selectedShipper.GetComponent<Renderer>().material = unselectedMaterial;
+                    selectedShipper.GetComponentInChildren<SpriteRenderer>().sprite = unselectedSprite;
                 }
                 selectedShipper = hitData.transform;
-                selectedShipper.GetComponent<Renderer>().material = selectedMaterial;
+                //selectedShipper.GetComponent<Renderer>().material = selectedMaterial;
+                selectedShipper.GetComponentInChildren<SpriteRenderer>().sprite = selectedSprite;
             }
             if (hitData.collider.CompareTag("Orderer"))
             {
                 if (selectedShipper != null && hitData.transform.GetComponent<Orderer>().shipper == null)
                 {
-                    selectedShipper.GetComponent<Renderer>().material = unselectedMaterial;
+                    //selectedShipper.GetComponent<Renderer>().material = unselectedMaterial;
+                    selectedShipper.GetComponentInChildren<SpriteRenderer>().sprite = unselectedSprite;
                     selectedOrderer = hitData.transform;
                     var shipper = selectedShipper.GetComponent<Shipper>();
                     var orderer = selectedOrderer.GetComponent<Orderer>();
