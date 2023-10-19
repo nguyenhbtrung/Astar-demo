@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        goal = 200;
+        goal = 300;
         money = 1;
         moneyText.SetText("Money: " + money.ToString() + ".000 VND");
         goalText.SetText("Goal: " + goal.ToString() + ".000 VND");

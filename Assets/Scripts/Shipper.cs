@@ -85,6 +85,14 @@ public class Shipper : MonoBehaviour
         path = Astar.FindPath(startNode, storeNode);
         targetPoint = path.Pop();
         secondPath = Astar.FindPath(storeNode, endNode);
+        // neu path.count == 0 thi khong the xet dieu kien o dong 48
+        // => khong the thay path = secondPath
+        // => can dieu kien nay de thay path = secondPath
+        if (path.Count == 0)
+        {
+            path = secondPath;
+            isTakenFood = true;
+        }
         this.orderPosition = orderPosition;
     }
 

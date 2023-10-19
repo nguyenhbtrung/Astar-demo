@@ -10,6 +10,13 @@ public static class Astar
         Node currentNode; //node hien tai
         Stack<Node> path = new Stack<Node>(); // stack de luu cac node tren duong di tu endPoint den startPoint
 
+
+        if (startPoint == endPoint)// neu startPoint == endPoint thi duong di chi co 1 nut
+        {
+            path.Push(endPoint);
+            return path;
+        }
+
         /*
          * danh sach tu sap sep cac phan tu theo thu tu tang dan su dung bien kieu float de so sanh
          * openlist - tap bien
@@ -26,7 +33,7 @@ public static class Astar
             if (currentNode == endPoint) // neu node hien tai la endPoint thi suy nguoc duong di tu endPoint den startPoint va tra ve danh sach luu cac node tren duong di
             {
                 //maxLoop de tranh vong lap vo han 
-                int maxLoop = 20;
+                int maxLoop = 50;
                 do
                 {
                     path.Push(currentNode); // day node hien tai vao danh sach duong di

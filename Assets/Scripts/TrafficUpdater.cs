@@ -24,7 +24,7 @@ public class TrafficUpdater : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(20);
+            yield return new WaitForSeconds(40);
             for (int i = 0; i < Astar.trafficLevelList.Count; i++)
             {
                 if (Astar.trafficLevelList[i] == 1)
