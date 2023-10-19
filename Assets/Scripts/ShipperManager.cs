@@ -4,8 +4,8 @@ public class ShipperManager : MonoBehaviour
 {
     public Transform selectedShipper;
     public Transform selectedOrderer;
-    public Material selectedMaterial;
-    public Material unselectedMaterial;
+    //public Material selectedMaterial;
+    //public Material unselectedMaterial;
     public Sprite selectedSprite;
     public Sprite unselectedSprite;
 
