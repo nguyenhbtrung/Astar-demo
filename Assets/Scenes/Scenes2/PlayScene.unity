@@ -1363,7 +1363,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: 21300000, guid: 32dfb49f510b242449fec8fa869692f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34539906a36c6cc418e8d4ca94b80c30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2541,7 +2541,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: 21300000, guid: 32dfb49f510b242449fec8fa869692f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34539906a36c6cc418e8d4ca94b80c30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3890,8 +3890,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedShipper: {fileID: 0}
   selectedOrderer: {fileID: 0}
-  selectedSprite: {fileID: 21300000, guid: 2cc16bf164ea87e44aa2b1b1fe6da23e, type: 3}
-  unselectedSprite: {fileID: 21300000, guid: 32dfb49f510b242449fec8fa869692f5, type: 3}
+  selectedSprite: {fileID: 21300000, guid: 99b5c03ddb95cc246b62ad1fa36e5914, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: 34539906a36c6cc418e8d4ca94b80c30, type: 3}
   pizzaStore: {fileID: 2049033898}
   banhMiStore: {fileID: 1702466622}
 --- !u!1 &1361563553
@@ -6469,7 +6469,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: 21300000, guid: 32dfb49f510b242449fec8fa869692f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34539906a36c6cc418e8d4ca94b80c30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
