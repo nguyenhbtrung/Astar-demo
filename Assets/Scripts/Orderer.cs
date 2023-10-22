@@ -63,7 +63,7 @@ public class Orderer : Node
     private void OnEnable()
     {
         foodType = (Food)Random.Range(0, 2);
-        counter = 10;
+        counter = 60;
         shipper = null;
         switch (foodType)
         {
